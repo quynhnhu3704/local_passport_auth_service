@@ -30,7 +30,7 @@ Server chạy tại: `http://localhost:3000`
 ```json
 {
   "username": "quynhnhu",
-  "password": "123"
+  "password": "12345"
 }
 ```
 
@@ -50,7 +50,7 @@ Server chạy tại: `http://localhost:3000`
 ```json
 {
   "username": "quynhnhu",
-  "password": "123"
+  "password": "12345"
 }
 ```
 
