@@ -54,10 +54,18 @@ Server chạy tại: `http://localhost:3000`
 }
 ```
 
-* Kết quả:
+* Kết quả (ví dụ):
 
 ```json
-{ "message": "Logged in successfully", "user": { ... } }
+{
+  "message": "Logged in successfully",
+  "user": {
+    "_id": "68d9372737347c47b49bb712",
+    "username": "quynhnhu",
+    "password": "$2b$10$uuyjdz97WwQVbgomdNfyOeoxGkLtxe4NmQp2Z9ryimeirVu4XatyG",
+    "__v": 0
+  }
+}
 ```
 
 * Tab **Cookies** → thấy `connect.sid=...`
@@ -68,7 +76,19 @@ Server chạy tại: `http://localhost:3000`
 
 * `GET http://localhost:3000/auth/profile`
 * Postman tự gửi cookie kèm request
-* Nếu còn hiệu lực → trả về thông tin user (không bao gồm password)
+* Nếu còn hiệu lực → trả về:
+
+```json
+{
+  "message": "Profile data",
+  "user": {
+    "_id": "68d9372737347c47b49bb712",
+    "username": "quynhnhu",
+    "password": "$2b$10$uuyjdz97WwQVbgomdNfyOeoxGkLtxe4NmQp2Z9ryimeirVu4XatyG",
+    "__v": 0
+  }
+}
+```
 
 ---
 
